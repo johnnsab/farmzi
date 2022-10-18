@@ -48,20 +48,39 @@
             background-color: $color-text;
         }
     }
+    &.text-adornment_grey {
+        p {
+            color: $color-grey;
+            font-size: 17px;
+            &:before {
+                background-color: $color-grey;
+            }
+        }
+    }
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button {
+    display: block;
+    text-align: center;
+    line-height: 38px;
     width: 212px;
     height: 40px;
     border: 2px solid #FFF;
     background-color: #fff;
     border-radius: 0;
     color: $color-brand;
+    transition: all 0.2s ease;
     &:hover {    
         background-color: $color-brand;
         color: #FFF;
     }
+    &.button_green-border {
+        border: 2px solid $color-brand;        
+    }
+}
+
+.title {
+    font-family: $font-headers;
+    color: $color-brand;
+    font-size: 48px;    
 }

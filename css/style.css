@@ -376,29 +376,141 @@ ul {
   height: 1px;
   background-color: #A4D6CF;
 }
+.text-adornment.text-adornment_grey p {
+  color: #777777;
+  font-size: 17px;
+}
+.text-adornment.text-adornment_grey p:before {
+  background-color: #777777;
+}
 
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button {
+  display: block;
+  text-align: center;
+  line-height: 38px;
   width: 212px;
   height: 40px;
   border: 2px solid #FFF;
   background-color: #fff;
   border-radius: 0;
   color: #177165;
+  transition: all 0.2s ease;
 }
-.btn:hover {
+.button:hover {
   background-color: #177165;
   color: #FFF;
+}
+.button.button_green-border {
+  border: 2px solid #177165;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  color: #177165;
+  font-size: 48px;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #177165;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #FFF;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #177165;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -67px 0 0 -150px;
+  height: 100vh;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
 }
 
 .header {
   background: #177165;
   height: 100vh;
   min-height: 716px;
+  overflow-x: hidden;
 }
 .header h1 {
+  display: none;
+}
+.header .hamburger {
   display: none;
 }
 
@@ -455,7 +567,84 @@ ul {
   color: #FFF;
   margin-top: 20px;
   margin-bottom: 18px;
+  width: 90%;
 }
-.header__content .header__btn {
+.header__content .header__button {
   margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .header__content .header__title {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    height: auto;
+  }
+  .header .hamburger {
+    display: block;
+  }
+  .header .hamburger .contact-phone {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+  }
+  .header__menu, .header__contact-phone {
+    display: none;
+  }
+}
+.about .container {
+  padding: 215px 0 100px;
+}
+.about .about__title {
+  margin-top: 11px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+.about .about__img {
+  width: 100%;
+}
+.about .about__desc-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about .description {
+  padding-left: 88px;
+}
+.about .description .content {
+  padding-left: 7px;
+}
+.about .description .button {
+  margin-top: 79px;
+}
+.about .description__title {
+  font-family: "Playfair Display", serif;
+  color: #177165;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+.about .description__text {
+  color: #777777;
+  margin-bottom: 15px;
+  line-height: 26px;
+}
+.about .description__blockquote {
+  font-family: "Playfair Display", serif;
+  color: #177165;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .about .description {
+    padding: 0;
+  }
+  .about .description .content {
+    margin-top: 15px;
+  }
+  .about .description .button {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
