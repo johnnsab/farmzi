@@ -520,7 +520,7 @@ ul {
 .header {
   background: #177165;
   height: 100vh;
-  min-height: 1000px;
+  min-height: 716px;
 }
 .header h1 {
   display: none;
@@ -595,6 +595,7 @@ ul {
 }
 @media (max-width: 992px) {
   .header {
+    min-height: 1000px;
     height: auto;
   }
   .header .hamburger {
@@ -607,6 +608,11 @@ ul {
   }
   .header__menu, .header__contact-phone {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    min-height: 1200px;
   }
 }
 .about .container {
@@ -674,10 +680,11 @@ ul {
 .services .services__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 6px;
 }
 .services .services__card-img {
   display: block;
+  width: 100%;
   margin: 0 auto;
 }
 .services .text-adornment {
@@ -689,4 +696,56 @@ ul {
   color: #177165;
   font-size: 22px;
   margin-bottom: 73px;
+}
+
+@media (max-width: 768px) {
+  .services .services__card {
+    align-items: center;
+  }
+  .services .services__card-img {
+    width: 100%;
+  }
+}
+.call-to-action {
+  background-color: #177165;
+}
+.call-to-action .container {
+  padding: 79px 0 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.call-to-action .call-to-action__desc {
+  margin-right: 20px;
+  width: 55%;
+}
+.call-to-action .call-to-action__title {
+  margin-top: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  color: #FFF;
+}
+.call-to-action .contact-phone {
+  background-color: #23786D;
+  width: 462px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .call-to-action .container {
+    flex-direction: column;
+  }
+  .call-to-action .call-to-action__desc {
+    margin-right: 0;
+    width: auto;
+    text-align: center;
+  }
+  .call-to-action .text-adornment p {
+    display: inline;
+  }
+  .call-to-action .contact-phone {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

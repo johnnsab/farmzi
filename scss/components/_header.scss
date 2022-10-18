@@ -1,7 +1,7 @@
 .header {
     background: $color-brand;
     height: 100vh;
-    min-height: 1000px;
+    min-height: 716px;
     h1 {
         display: none;
     }
@@ -90,6 +90,7 @@
 
 @media (max-width: 992px) {
     .header {
+        min-height: 1000px;
         height: auto;
         .hamburger {
             display: block;
@@ -102,5 +103,11 @@
     }
     .header__menu, .header__contact-phone {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        min-height: 1200px;
     }
 }

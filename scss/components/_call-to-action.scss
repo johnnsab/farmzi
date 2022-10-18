@@ -1,0 +1,47 @@
+.call-to-action {
+    background-color: $color-brand;
+    .container {
+        padding: 79px 0 82px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .call-to-action__desc {
+        margin-right: 20px;
+        width: 55%;
+    }
+    .call-to-action__title {
+        margin-top: 12px;
+        font-family: $font-headers;
+        font-size: 48px;
+        color: #FFF;
+    }
+    .contact-phone {
+        background-color: $color-brand-light;
+        width: 462px;
+        height: 98px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .call-to-action {
+        .container {
+            flex-direction: column;
+        }
+        .call-to-action__desc {
+            margin-right: 0;
+            width: auto;
+            text-align: center;
+        }
+        .text-adornment {
+            p {
+                display: inline;
+            }
+        }
+        .contact-phone {
+            margin-top: 20px;
+        }
+    }
+}
