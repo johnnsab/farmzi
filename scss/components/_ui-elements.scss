@@ -57,6 +57,15 @@
             }
         }
     }
+    &.text-adornment_small {
+        p {
+            color: $color-grey;
+            font-size: 15px;
+            &:before {
+                background-color: $color-grey;
+            }
+        }
+    }
 }
 
 .button {
@@ -76,6 +85,14 @@
     }
     &.button_green-border {
         border: 2px solid $color-brand;        
+    }
+    &.button_light-green {
+        border: 2px solid $color-brand;
+        background-color: $color-light-green;
+        &:hover {
+            background-color: $color-brand;
+            color: $color-light-green;
+        }    
     }
 }
 

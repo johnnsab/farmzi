@@ -312,6 +312,7 @@ template {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 a, a:hover {
@@ -383,6 +384,13 @@ ul {
 .text-adornment.text-adornment_grey p:before {
   background-color: #777777;
 }
+.text-adornment.text-adornment_small p {
+  color: #777777;
+  font-size: 15px;
+}
+.text-adornment.text-adornment_small p:before {
+  background-color: #777777;
+}
 
 .button {
   display: block;
@@ -402,6 +410,14 @@ ul {
 }
 .button.button_green-border {
   border: 2px solid #177165;
+}
+.button.button_light-green {
+  border: 2px solid #177165;
+  background-color: #E1F4F2;
+}
+.button.button_light-green:hover {
+  background-color: #177165;
+  color: #E1F4F2;
 }
 
 .title {
@@ -504,8 +520,7 @@ ul {
 .header {
   background: #177165;
   height: 100vh;
-  min-height: 716px;
-  overflow-x: hidden;
+  min-height: 1000px;
 }
 .header h1 {
   display: none;
@@ -647,4 +662,31 @@ ul {
   .about .description .button {
     margin-top: 20px;
   }
+}
+.services {
+  background-color: #E1F4F2;
+  padding: 100px 0 113px;
+}
+.services .services__title {
+  margin-top: 10px;
+  margin-bottom: 52px;
+}
+.services .services__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .services__card-img {
+  display: block;
+  margin: 0 auto;
+}
+.services .text-adornment {
+  margin-top: 29px;
+  margin-bottom: 5px;
+}
+.services .services__card-title {
+  font-family: "Playfair Display", serif;
+  color: #177165;
+  font-size: 22px;
+  margin-bottom: 73px;
 }/*# sourceMappingURL=style.css.map */
