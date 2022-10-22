@@ -1,0 +1,16 @@
+.symbols {
+    padding: 100px 0;
+    background-color: $color-light-green;
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .symbols {
+        .container {            
+            flex-wrap: wrap;
+        }
+    }
+}
