@@ -611,7 +611,6 @@ ul {
 }
 
 .header {
-  overflow-x: hidden;
   background: #177165;
   height: 100vh;
   min-height: 716px;
@@ -1098,6 +1097,68 @@ ul {
   transform: rotate(180deg);
 }
 
+.clients {
+  background: #E1F4F2;
+}
+.clients .container {
+  padding: 100px 0;
+  overflow-x: hidden;
+}
+.clients .clients__title {
+  font-family: "Playfair Display", serif;
+  color: #177165;
+  font-size: 48px;
+  margin-top: 12px;
+}
+.clients .clients__swiper {
+  margin-top: 53px;
+  width: 1682px;
+  transform: translateX(-340px);
+}
+.clients .swiper-slide {
+  width: 540px;
+  height: 451px;
+  padding: 60px 60px 55px;
+  background: #FFF url(../img/quotes.svg) no-repeat center 15px/210px;
+}
+.clients .swiper-slide blockquote {
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  color: #177165;
+}
+.clients .swiper-slide .text-adornment {
+  margin-top: 65px;
+  font-size: 17px;
+}
+.clients .swiper-slide .slide__title {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #177165;
+  margin-top: 14px;
+}
+
+@media (max-width: 992px) {
+  .clients .clients__swiper {
+    transform: translateX(-407px);
+  }
+}
+@media (max-width: 768px) {
+  .clients .clients__swiper {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 576px) {
+  .clients .clients__swiper {
+    width: 1089px;
+    transform: translateX(20px);
+  }
+  .clients .swiper-slide {
+    height: auto;
+  }
+  .clients .swiper-slide blockquote {
+    font-size: 18px;
+  }
+}
 .lifehacks {
   background-color: #FFF;
   padding: 100px 0 100px;

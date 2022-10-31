@@ -50,6 +50,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">	
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
 	<!-- Fonts and styles ends -->
     
@@ -333,7 +337,7 @@
                 </div>
             </div>
         </section>
-        <div class="statistic">
+        <section class="statistic">
             <div class="container light-green">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 card__outer-wrapper">
@@ -424,8 +428,82 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="lifehacks">
+        </section>
+        <section class="clients">
+            <div class="container">
+                <div class="text-adornment text-adornment_grey">
+                    <p>Happy Clients</p>
+                </div>
+                <h3 class="clients__title">
+                    Farmzi got best feedback from happy clients
+                </h3>
+                <div class="clients__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-wrapper">
+                                <blockquote>
+                                    “Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry's standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book
+                                </blockquote>
+                                <div class="text-adornment text-adornment_grey">
+                                    <p>
+                                        Designer of Musion
+                                    </p>
+                                </div>
+                                <h4 class="slide__title">
+                                    Rachel Patterson
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-wrapper">
+                                <blockquote>
+                                    “Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry's standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book
+                                </blockquote>
+                                <div class="text-adornment text-adornment_grey">
+                                    <p>
+                                        Founder of Musion
+                                    </p>
+                                </div>
+                                <h4 class="slide__title">
+                                    Shoshana Horsley
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-wrapper">
+                                <blockquote>
+                                    “Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry's standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book
+                                </blockquote>
+                                <div class="text-adornment text-adornment_grey">
+                                    <p>
+                                        CEO of Musion
+                                    </p>
+                                </div>
+                                <h4 class="slide__title">
+                                    Jhon Doe
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-wrapper">
+                                <blockquote>
+                                    “Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem has been the industry's standard dummy text since the 1500 when an unknown printer took galley type and scram bled it make a type specimen book
+                                </blockquote>
+                                <div class="text-adornment text-adornment_grey">
+                                    <p>
+                                        Junior JS developer of Musion
+                                    </p>
+                                </div>
+                                <h4 class="slide__title">
+                                    John Sabran
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lifehacks">
             <div class="container">
                 <div class="text-adornment text-adornment_grey">
                     <p>Latest News</p>
@@ -492,8 +570,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="symbols">
+        </section>
+        <section class="symbols">
             <div class="container">
                 <img src="img/natural-01.png" alt="farmzi logo">
                 <img src="img/natural-02.png" alt="farmzi logo">
@@ -501,10 +579,18 @@
                 <img src="img/natural-04.png" alt="farmzi logo">
                 <img src="img/natural-05.png" alt="farmzi logo">
             </div>
-        </div>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        var swiper = new Swiper(".clients__swiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,   
+        });
+      </script>
 </body>
 </html>

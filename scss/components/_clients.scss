@@ -1,0 +1,70 @@
+.clients {
+    background: $color-light-green;
+    .container {
+        padding: 100px 0;
+        overflow-x: hidden;
+    }
+    .clients__title {
+        font-family: $font-headers;
+        color: $color-brand;
+        font-size: 48px;
+        margin-top: 12px;
+    }
+    .clients__swiper {
+        margin-top: 53px;
+        width: 1682px;
+        transform: translateX(-340px);
+    }
+    .swiper-slide {
+        width: 540px;
+        height: 451px;
+        padding: 60px 60px 55px;
+        background: #FFF url(../img/quotes.svg) no-repeat center 15px / 210px;
+        blockquote {
+            font-size: 22px;
+            font-family: $font-headers;
+            color: $color-brand;
+        }
+        .text-adornment {
+            margin-top: 65px;
+            font-size: 17px;
+        }
+        .slide__title {
+            font-family: $font-headers;
+            font-size: 26px;
+            color: $color-brand;
+            margin-top: 14px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .clients {
+        .clients__swiper {
+            transform: translateX(-407px);           
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .clients {
+        .clients__swiper {
+            transform: translateX(0);
+        }        
+    }
+}
+
+@media (max-width: 576px) {
+    .clients {
+        .clients__swiper {
+            width: 1089px;
+            transform: translateX(20px);
+        }
+        .swiper-slide {
+            height: auto;
+            blockquote {
+                font-size: 18px;
+            }
+        }
+    }
+}
