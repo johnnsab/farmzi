@@ -7,9 +7,7 @@
     .news-card {
         background-color: $color-light-green;
         color: $color-brand;
-        font-family: $font-base;
-        // height: 713px;
-        // max-height: 713px;
+        font-family: $font-base;        
         .news__img {
             width: 100%;
         }
@@ -28,8 +26,7 @@
                 }
             }
             .news-card__title {            
-                font-family: $font-headers;
-                // margin-left: 30px;
+                font-family: $font-headers;                
                 font-size: 25px;
                 max-width: 486px;            
             }
