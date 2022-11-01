@@ -1159,62 +1159,70 @@ ul {
     font-size: 18px;
   }
 }
-.lifehacks {
+.news {
   background-color: #FFF;
   padding: 100px 0 100px;
 }
-.lifehacks .lifehacks__title {
+.news .news__title {
   margin: 10px 0 52px;
 }
-.lifehacks .lifehacks-card {
+.news .news-card {
   background-color: #E1F4F2;
   color: #177165;
   font-family: "Roboto", sans-serif;
-  height: 713px;
-  max-height: 713px;
 }
-.lifehacks .lifehacks-card .lifehacks__img {
+.news .news-card .news__img {
   width: 100%;
 }
-.lifehacks .lifehacks-card .lifehacks-card__header {
-  display: flex;
-  padding: 30px 0 23px 30px;
+.news .news-card .news-card__wrapper {
+  padding: 30px 30px 43px;
 }
-.lifehacks .lifehacks-card .lifehacks-card__header p {
+.news .news-card .news-card__wrapper .news-card__header {
+  display: flex;
+  margin-bottom: 23px;
+}
+.news .news-card .news-card__wrapper .news-card__header p {
   margin-bottom: 0;
 }
-.lifehacks .lifehacks-card .lifehacks-card__header span {
+.news .news-card .news-card__wrapper .news-card__header span {
   font-size: 15px;
   margin: 0 20px 0 5px;
   color: #777777;
 }
-.lifehacks .lifehacks-card .lifehacks-card__title {
+.news .news-card .news-card__wrapper .news-card__title {
   font-family: "Playfair Display", serif;
-  margin-left: 30px;
   font-size: 25px;
   max-width: 486px;
 }
-.lifehacks .lifehacks-card .lifehacks-card__title_narrow {
+.news .news-card .news-card__wrapper .news-card__title_narrow {
   max-width: 389px;
 }
-.lifehacks .lifehacks-card .lifehacks-card__content {
-  margin: 0 88px 45px 30px;
+.news .news-card .news-card__wrapper .news-card__content {
+  margin: 0 88px 45px 0;
   color: #777777;
 }
-.lifehacks .lifehacks-card .lifehacks__button {
+.news .news-card .news-card__wrapper .news__button {
   margin-left: 25px;
 }
 
 @media (max-width: 992px) {
-  .lifehacks-card__title_narrow {
+  .news-card__title_narrow {
     margin-bottom: 54px;
   }
 }
+@media (max-width: 768px) {
+  .news-card {
+    margin: 10px 0;
+  }
+}
 @media (max-width: 576px) {
-  .lifehacks-card__title {
+  .news-card {
+    margin: 10px 0;
+  }
+  .news-card .news-card__title {
     margin: 0 auto;
   }
-  .lifehacks-card__title_narrow {
+  .news-card .news-card__title_narrow {
     margin-bottom: 0;
   }
 }
@@ -1230,5 +1238,8 @@ ul {
 @media (max-width: 768px) {
   .symbols .container {
     flex-wrap: wrap;
+  }
+  .symbols .container .symbols-wrapper {
+    padding: 10px 10px;
   }
 }/*# sourceMappingURL=style.css.map */

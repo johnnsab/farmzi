@@ -11,6 +11,9 @@
     .symbols {
         .container {            
             flex-wrap: wrap;
+            .symbols-wrapper {
+                padding: 10px 10px;
+            }
         }
     }
 }
