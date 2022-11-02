@@ -1,0 +1,20 @@
+.footer-signature {
+    .footer-signature__wrapper{
+        background-color: #0A312C;
+        .footer-signature {
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+            font-family: $font-base;
+            font-size: 16px;
+            font-weight: 300;
+            color: #FFF;
+            .footer-signature__link {
+                font-family: $font-base;
+                font-size: 16px;
+                font-weight: 300;
+                color: $color-text;
+            }
+        }
+    }
+}

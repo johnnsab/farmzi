@@ -1,49 +1,134 @@
 .footer {
-    background-color: $color-brand;
-    padding: 100px 0;
+    background-color: $color-brand;    
     .container {
-        display: flex;
         .footer__wrapper {
-            padding: 68px 92px 168px 0;
+            padding: 100px 0;
             display: flex;
-            .footer__list {
-                &.footer__list_center {
-                    padding-left: 75px;
-                    padding-right: 119px;
-                }
-                .footer__title {
-                    font-family: $font-headers;
-                    color: #FFF;
-                    font-size: 30px;
-                    font-weight: 400;
-                    margin-bottom: 50px;
-                }
-                .footer__link {
+            .footer__nav {
+                padding: 68px 92px 168px 0;
+                display: flex;
+                .footer__list {
+                    &.footer__list_center {
+                        padding-left: 75px;
+                        padding-right: 119px;
+                    }
+                    .footer__title {
+                        font-family: $font-headers;
+                        color: #FFF;
+                        font-size: 30px;
+                        font-weight: 400;
+                        margin-bottom: 50px;
+                    }
+                    .footer__menu {
+                        font-family: $font-base;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-weight: 300;                    
+                        margin-top: 28px;
+                        .footer__link {
+                            position: relative;
+                            padding-left: 28px;
+                            &:before {
+                                content:url('/img/hooks.svg');
+                                position: absolute;
+                                left: 3px;                        
+                            }
+                        }
+                    }            
+                }  
+            }
+            .footer__card {
+                padding: 70px 98px 89px 70px;
+                background-color: $color-brand-light;
+                .footer__card-content {
+                    padding: 88px 0 32px 0;
+                    margin: 0 auto;
                     font-family: $font-base;
                     color: #FFF;
                     font-size: 16px;
                     font-weight: 300;
-                    position: relative;
-                    padding-left: 28px;
-                    margin-top: 28px;
-                    &:before {
-                        content:url('/img/hooks.svg');
-                        position: absolute;
-                        left: 3px;                        
-                    }
-                }            
-            }  
+                }
+            }
         }
-        .footer__card {
-            padding: 70px 98px 89px 70px;
-            background-color: $color-brand-light;
-            .footer__card-content {
-                padding: 88px 0 32px 0;
-                margin: 0 auto;
-                font-family: $font-base;
-                color: #FFF;
-                font-size: 16px;
-                font-weight: 400;
+    }    
+}
+
+@media (max-width: 1200px) {    
+    .footer {        
+        .container {            
+            .footer__wrapper {    
+                .footer__nav{
+                    .footer__list {
+                        &.footer__list_center {
+                            padding: 0 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {        
+        .container {                        
+            .footer__wrapper {
+                display: block;
+                .footer__nav {
+                    padding: 68px 92px;
+                    display: flex;
+                    justify-content: space-between;
+                    .footer__list {
+                        &.footer__list_center {
+                            padding: 0;
+                        }
+                    }
+                }
+                .footer__card {
+                    .header__contact-phone {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {        
+        .container {
+            .footer__wrapper {
+                display: block;
+                .footer__nav {
+                    padding: 68px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .footer__list {
+                        &.footer__list_center {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {        
+        .container {
+            .footer__wrapper {                       
+                display: block;
+                .footer__nav {
+                    padding: 68px 0;
+                    display: flex;
+                    justify-content: space-around;
+                    .footer__list {
+                        &.footer__list_center {
+                            padding: 0;
+                        }
+                    }
+                }
             }
         }
     }
