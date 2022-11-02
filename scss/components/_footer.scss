@@ -1,0 +1,50 @@
+.footer {
+    background-color: $color-brand;
+    padding: 100px 0;
+    .container {
+        display: flex;
+        .footer__wrapper {
+            padding: 68px 92px 168px 0;
+            display: flex;
+            .footer__list {
+                &.footer__list_center {
+                    padding-left: 75px;
+                    padding-right: 119px;
+                }
+                .footer__title {
+                    font-family: $font-headers;
+                    color: #FFF;
+                    font-size: 30px;
+                    font-weight: 400;
+                    margin-bottom: 50px;
+                }
+                .footer__link {
+                    font-family: $font-base;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 300;
+                    position: relative;
+                    padding-left: 28px;
+                    margin-top: 28px;
+                    &:before {
+                        content:url('/img/hooks.svg');
+                        position: absolute;
+                        left: 3px;                        
+                    }
+                }            
+            }  
+        }
+        .footer__card {
+            padding: 70px 98px 89px 70px;
+            background-color: $color-brand-light;
+            .footer__card-content {
+                padding: 88px 0 32px 0;
+                margin: 0 auto;
+                font-family: $font-base;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}

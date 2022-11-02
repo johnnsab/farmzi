@@ -1242,4 +1242,52 @@ ul {
   .symbols .container .symbols-wrapper {
     padding: 10px 10px;
   }
+}
+.footer {
+  background-color: #177165;
+  padding: 100px 0;
+}
+.footer .container {
+  display: flex;
+}
+.footer .container .footer__wrapper {
+  padding: 68px 92px 168px 0;
+  display: flex;
+}
+.footer .container .footer__wrapper .footer__list.footer__list_center {
+  padding-left: 75px;
+  padding-right: 119px;
+}
+.footer .container .footer__wrapper .footer__list .footer__title {
+  font-family: "Playfair Display", serif;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.footer .container .footer__wrapper .footer__list .footer__link {
+  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  padding-left: 28px;
+  margin-top: 28px;
+}
+.footer .container .footer__wrapper .footer__list .footer__link:before {
+  content: url("/img/hooks.svg");
+  position: absolute;
+  left: 3px;
+}
+.footer .container .footer__card {
+  padding: 70px 98px 89px 70px;
+  background-color: #23786D;
+}
+.footer .container .footer__card .footer__card-content {
+  padding: 88px 0 32px 0;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
