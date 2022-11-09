@@ -4,8 +4,9 @@
         .footer__wrapper {
             padding: 100px 0;
             display: flex;
+            justify-content: space-between;
             .footer__nav {
-                padding: 68px 92px 168px 0;
+                padding: 68px 0 168px;
                 display: flex;
                 .footer__list {
                     &.footer__list_center {
@@ -25,11 +26,16 @@
                         font-size: 16px;
                         font-weight: 300;                    
                         margin-top: 28px;
+                        transform: scale(1);
+                        transition: transform 0.5s ease;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                         .footer__link {
                             position: relative;
                             padding-left: 28px;
                             &:before {
-                                content:url('/img/hooks.svg');
+                                content: url('../img/hooks.svg');
                                 position: absolute;
                                 left: 3px;                        
                             }
@@ -37,16 +43,39 @@
                     }            
                 }  
             }
-            .footer__card {
-                padding: 70px 98px 89px 70px;
-                background-color: $color-brand-light;
-                .footer__card-content {
-                    padding: 88px 0 32px 0;
-                    margin: 0 auto;
+            .footer__wrapper-card {
+                .footer__card {
+                    width: 463px;
+                    padding: 70px 98px 89px 70px;
+                    background-color: $color-brand-light;
+                    .footer__card-content {
+                        padding: 88px 0 32px 0;
+                        margin: 0 auto;
+                        font-family: $font-base;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+    .footer__signature {
+        .footer__signature-wrapper{
+            background-color: #0A312C;
+            .footer__signature-content {
+                margin: 0 auto;
+                padding: 20px 0;
+                text-align: center;
+                font-family: $font-base;
+                font-size: 16px;
+                font-weight: 300;
+                color: #FFF;
+                .footer__signature-link {
                     font-family: $font-base;
-                    color: #FFF;
                     font-size: 16px;
                     font-weight: 300;
+                    color: $color-text;
                 }
             }
         }
@@ -57,10 +86,12 @@
     .footer {        
         .container {            
             .footer__wrapper {    
+                display: flex;
+                justify-content: space-between;
                 .footer__nav{
                     .footer__list {
                         &.footer__list_center {
-                            padding: 0 50px;
+                            padding: 0 25px;
                         }
                     }
                 }
@@ -84,9 +115,13 @@
                         }
                     }
                 }
-                .footer__card {
-                    .header__contact-phone {
-                        display: flex;
+                .footer__wrapper-card {
+                    display: flex;
+                    justify-content: center;
+                    .footer__card {
+                        .header__contact-phone {
+                            display: flex;
+                        }
                     }
                 }
             }
@@ -124,10 +159,26 @@
                     display: flex;
                     justify-content: space-around;
                     .footer__list {
+                        .footer__title {
+                            font-size: 25px;
+                        }
                         &.footer__list_center {
                             padding: 0;
                         }
+                        .footer__menu {                            
+                            .footer__link {
+                                position: relative;
+                                padding-left: 2px;
+                                &:before {
+                                    content: none;
+                                                                                                
+                                }
+                            }
+                        }            
                     }
+                }
+                .footer__card {
+                    width: auto;
                 }
             }
         }

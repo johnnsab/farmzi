@@ -8,6 +8,7 @@
             align-items: flex-end;
             height: 530px;            
             position: relative;
+            cursor: grab;
             &[data-background="1"] {
                 background: url('../img/slider-01.jpg') no-repeat center top / cover;
             }
