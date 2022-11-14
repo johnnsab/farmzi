@@ -10,7 +10,8 @@
  * Released on: October 12, 2022
  */
 
-@import 'vars/swiper-vars.scss';
+ $themeColor: #007aff !default;
+ 
 @at-root {
   @font-face {
     font-family: 'swiper-icons';

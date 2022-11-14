@@ -1,14 +1,5 @@
 $(document).ready(function(){
-    $('.img-slider').slick({
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows: false,
-                }
-            }
-        ]
-    });
+    $('.img-slider').slick();
     var swiper = new Swiper(".clients__swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
